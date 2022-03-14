@@ -22,7 +22,9 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    title:'${serviceName}',
+    meta:{
+      title:'${serviceName}',
+    },
     component: () => import('./Home.vue')
   },
 ]
@@ -37,34 +39,59 @@ const indexTemplate = `
 import { createApp } from 'vue'
 import App from '@/App.vue'
 import router from './router'
+import { setMetaTitle } from '@/utils'
+
+import {ElButton,ElResult} from  'element-plus'
+const ELplugin = [ElButton,ElResult] //减少写app.use的次数
+
+router.beforeEach((f,t,next)=>{
+  setMetaTitle(f.meta.title)
+  next()
+})
 
 const app = createApp(App)
+ELplugin.forEach(el=>app.use(el))
 app.use(router).mount('#app')
+
 `
 
 const homeTemplate = `
 <template>
   <div class="home">    
-     <h1>服务:${serviceName}</h1>
+     <el-result
+        icon="success"
+        title="已成功构建服务:${serviceName}"
+      >
+        <template #extra>
+          <el-button @click="helloWorld">Helloworld</el-button>
+        </template>
+      </el-result>
+     
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import api from '@/api'
+//api已自动引入全局
+// import api from '@/api' 
 export default defineComponent({
   setup(){
-
+    const helloWorld = ()=>{alert("Hello!")}
+    return {
+      helloWorld
+    }
   },
 })
 </script>
+<style lang="scss" scoped>
+</style>
 `
 
 const apiTemplate = `
 import request from '../axios'
 
 export default {
-  ${serviceName}_templateGetRequest:(params:Object)=>request.get("/student",params,{},true),
-  ${serviceName}_templatePostRequest:(params:Object)=>request.post("/student",params,{},true)
+  ${serviceName}_GetRequest:(params:Object)=>request.get("/get",params,{},true),
+  ${serviceName}_PostRequest:(params:Object)=>request.post("/post",params,{},true)
 }               
 `
 
