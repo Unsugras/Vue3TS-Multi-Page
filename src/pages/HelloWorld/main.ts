@@ -4,8 +4,8 @@ import App from '@/App.vue'
 import router from './router'
 import { setMetaTitle } from '@/utils'
 
-import {ElButton,ElResult} from  'element-plus'
-const ELplugin = [ElButton,ElResult] //减少写app.use的次数
+import {ElButton,ElResult,ElSwitch} from  'element-plus'
+const ELplugin = [ElButton,ElResult,ElSwitch] //减少写app.use的次数
 
 router.beforeEach((f,t,next)=>{
   setMetaTitle(f.meta.title)
