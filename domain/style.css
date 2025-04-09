@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main {
+        width: 1200px;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Clash Display Variable, Clash Display Variable;
+
+            .brand {
+                margin-top: 50px;
+                font-family: Clash Display Variable, Clash Display Variable;
+                font-weight: 600;
+                font-size: 30px;
+                color: #23262A;
+                line-height: 30px;
+                letter-spacing: 6px;
+                text-align: left;
+                font-style: normal;
+            }
+
+            .content {
+                font-family: Clash Display Variable, Clash Display Variable;
+                font-weight: 400;
+                font-size: 20px;
+                color: #4C5156;
+                line-height: 40px;
+                letter-spacing: 4px;
+                text-align: center;
+                font-style: normal;
+                text-transform: none;
+            }
+
+            .c1 {
+                margin-top: 20px;
+            }
+
+            .c2 {
+                margin-top: 50px;
+            }
+
+        }
+
+        .banner {
+            margin-top: 20px;
+
+            .img {
+                width: 100%;
+            }
+        }
+
+        .product-show {
+            margin-top: 150px;
+            position: relative;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .title {
+                    font-family: Clash Display Variable, Clash Display Variable;
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: #23262A;
+                    line-height: 40px;
+                    letter-spacing: 8px;
+                    text-align: left;
+                    font-style: normal;
+                    text-transform: none;
+                }
+
+                .dots {
+                    margin-top: 50px;
+                }
+            }
+
+            .control-btn {
+                z-index: 100;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 100px;
+            }
+
+            .control-left {
+                left: calc(-20px - 60px);
+                top: calc(50% - (60px/2));
+            }
+
+            .control-right {
+                right: calc(-20px - 60px);
+                top: calc(50% - (60px/2));
+            }
+
+            .swiper-list {
+                overflow: hidden;
+                position: relative;
+
+                .list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .list-block {
+                        width: calc((1200px - (20px * 3)) / 4);
+                        margin-left: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .product-img {
+                            overflow: hidden;
+                            width: 285px;
+                            height: 285px;
+
+                            img {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+
+                        .product-name {
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-self: center;
+                            font-family: Clash Display Variable, Clash Display Variable;
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #23262A;
+                            line-height: 20px;
+                            text-align: left;
+                            font-style: normal;
+                            text-transform: none;
+                            margin-top: 20px;
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    .list-block:nth-child(4n+1) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

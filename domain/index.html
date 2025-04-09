@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="./img/Layer_1@2x.png" alt="">
+        </div>
+        <div class="desc">
+            <div class="brand">品牌故事</div>
+            <div class="content c1">在神秘而迷人的东方，有一片被月光眷恋的土地</div>
+            <div class="content">—— Luna Siam</div>
+            <div class="content c2"> 那里的夜晚，明月高悬，银色的光辉洒在古老的庙宇与静谧的河流上，如梦如幻。</div>
+            <div class="content">Luna Siam 品牌的灵感便源于此。</div>
+            <div class="content">“Luna” 在拉丁语中意为月亮，象征着神秘、浪漫与永恒。</div>
+        </div>
+        <div class="banner">
+            <img src="./img/image@2x.png" alt="">
+        </div>
+        <div class="product-show">
+            <div class="top">
+                <div class="title">产品展示</div>
+                <div class="dots">
+                    ?
+                    <img src="./img/Line_10@2x.png" alt="">
+                </div>
+            </div>
+            <div class="control-left control-btn" id="prevLeftBtn">
+            </div>
+            <div class="control-right control-btn" id="prevRightBtn">
+            </div>
+            <div class="swiper-container swiper-list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="list">
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="list">
+                            <div class="list-block">
+                                <div class="product-img">
+                                    <img src="./img/product@2x.png" alt="">
+                                </div>
+                                <div class="product-name">
+                                    蒂芙尼经典设计
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper(".swiper-list", {});
+
+                document.getElementById('prevLeftBtn').addEventListener('click', () => {
+                    swiper.slidePrev();
+                });
+                document.getElementById('prevRightBtn').addEventListener('click', () => {
+                    swiper.slideNext();
+                });
+
+            </script>
+        </div>
+
+    </div>
+</body>
+
+</html>
