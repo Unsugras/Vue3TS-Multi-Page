@@ -30,107 +30,195 @@
             <div class="top">
                 <div class="title">产品展示</div>
                 <div class="dots">
-                    ?
-                    <img src="./img/Line_10@2x.png" alt="">
                 </div>
             </div>
-            <div class="control-left control-btn" id="prevLeftBtn">
-            </div>
-            <div class="control-right control-btn" id="prevRightBtn">
-            </div>
-            <div class="swiper-container swiper-list">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="list">
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
-                            </div>
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
+
+            <div class="swipe">
+                <div class="control-left control-btn" id="prevLeftBtn">
+                    <img src="./img/left.png" alt="">
+                </div>
+                <div class="control-right control-btn" id="prevRightBtn">
+                    <img src="./img/right.png" alt="">
+                </div>
+                <div class="swiper-container swiper-list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="list">
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="list">
-                            <div class="list-block">
-                                <div class="product-img">
-                                    <img src="./img/product@2x.png" alt="">
-                                </div>
-                                <div class="product-name">
-                                    蒂芙尼经典设计
-                                </div>
+                        <div class="swiper-slide">
+                            <div class="list">
+                                <a class="list-block" href="http://baidu.com">
+                                    <div class="product-img">
+                                        <img src="./img/product@2x.png" alt="">
+                                    </div>
+                                    <div class="product-name">
+                                        蒂芙尼经典设计
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <script>
+                    var swiper = new Swiper(".swiper-list", {});
+
+                    document.getElementById('prevLeftBtn').addEventListener('click', () => {
+                        swiper.slidePrev();
+                    });
+                    document.getElementById('prevRightBtn').addEventListener('click', () => {
+                        swiper.slideNext();
+                    });
+
+                </script>
             </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <script>
-                var swiper = new Swiper(".swiper-list", {});
-
-                document.getElementById('prevLeftBtn').addEventListener('click', () => {
-                    swiper.slidePrev();
-                });
-                document.getElementById('prevRightBtn').addEventListener('click', () => {
-                    swiper.slideNext();
-                });
-
-            </script>
+            <div class="design">
+                <div class="img">
+                    <img src="./img/image2@2x.png" alt="">
+                </div>
+                <div class="text-block">
+                    <div class="float">
+                        <div class="header">
+                            Luna Siam 经典设计
+                        </div>
+                        <div class="content">
+                            Luna
+                            Siam珠宝，萃取暹罗古韵融入现代经典设计。其线条流畅灵动，似在演绎古老暹罗的浪漫传说。在色彩运用上，巧妙融合泰国传统色彩的明艳与自然色调的柔和，碰撞出强烈视觉冲击。精选天然宝石与特色金属，红宝石似骄阳热烈，蓝宝石如夜空深邃，经工匠精心雕琢，件件皆为非凡格调的传世臻品。
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div class="footer">
+            <div class="top">
+                <div class="title">立即联系我们</div>
+            </div>
+            <div class="concat-way">
+                <div class="way">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        020-00009999
+                    </div>
+                </div>
+                <div class="way">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        020-00009999
+                    </div>
+                </div>
+                <div class="way">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        020-00009999
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <div class="title">关注我们</div>
+            </div>
+            <div class="follow-way">
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Vector@2x.png" alt="">
+                    </div>
+                </a>
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Vector@2x.png" alt="">
+                    </div>
+                </a>
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Vector@2x.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="domain-record">
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        沪ICP备17050835号-2
+                    </div>
+                </a>
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        沪ICP备17050835号-2
+                    </div>
+                </a>
+                <a class="way" href="http://baidu.com">
+                    <div class="way-logo">
+                        <img src="./img/Group_5840@2x.png" alt="">
+                    </div>
+                    <div class="code">
+                        沪ICP备17050835号-2
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
