@@ -1,0 +1,385 @@
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .main {
+    width: 1200px;
+}
+
+body .main .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body .main .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Clash Display Variable, Clash Display Variable;
+}
+
+body .main .desc .brand {
+    margin-top: 50px;
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 600;
+    font-size: 30px;
+    color: #23262A;
+    line-height: 30px;
+    letter-spacing: 6px;
+    text-align: left;
+    font-style: normal;
+}
+
+body .main .desc .content {
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4C5156;
+    line-height: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .desc .c1 {
+    margin-top: 20px;
+}
+
+body .main .desc .c2 {
+    margin-top: 50px;
+}
+
+body .main .banner {
+    margin-top: 20px;
+}
+
+body .main .banner img {
+    width: 100%;
+}
+
+body .main .product-show-pc {
+    margin-top: 150px;
+}
+
+body .main .product-show-pc .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body .main .product-show-pc .top .title {
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 600;
+    font-size: 40px;
+    color: #23262A;
+    line-height: 40px;
+    letter-spacing: 8px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .product-show-pc .top .dots {
+    border: 1px solid #c1c6cb;
+    margin-top: 50px;
+    width: 50px;
+}
+
+body .main .product-show-pc .swipe {
+    position: relative;
+}
+
+body .main .product-show-pc .swipe .control-btn {
+    z-index: 100;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .main .product-show-pc .swipe .control-left {
+    left: calc(-20px - 60px);
+    top: calc(50% - (60px/2));
+}
+
+body .main .product-show-pc .swipe .control-right {
+    right: calc(-20px - 60px);
+    top: calc(50% - (60px/2));
+}
+
+body .main .product-show-pc .swipe .swiper-list {
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block {
+    width: calc((1200px - (20px * 3)) / 4);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block .product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 285px;
+    height: 285px;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block .product-img img {
+    transition: all ease 0.3s;
+    /* zoom: 100%; */
+    transform: scale(1);
+    margin: 0;
+    padding: 0;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block .product-img img:hover {
+    transform: scale(1.25);
+    /* zoom: 125%; */
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block .product-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 500;
+    font-size: 20px;
+    color: #23262A;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+body .main .product-show-pc .swipe .swiper-list .list .list-block:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+body .main .product-show-mobile {
+    display: none;
+}
+
+body .main .design {
+    margin-top: 140px;
+    display: flex;
+}
+
+body .main .design .img {
+    width: 900px;
+    min-height: 550px;
+}
+
+body .main .design .img img {
+    width: 100%;
+}
+
+body .main .design .text-block {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+body .main .design .text-block .float {
+    position: absolute;
+    left: calc(-100% - 74px);
+    width: 200%;
+    background: rgba(235, 239, 242, 0.76);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 37px 20px 37px;
+}
+
+body .main .design .text-block .float .header {
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 600;
+    font-size: 30px;
+    color: #23262A;
+    line-height: 30px;
+    letter-spacing: 6px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .design .text-block .float .content {
+    margin-top: 20px;
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 400;
+    font-size: 20px;
+    color: #221100;
+    line-height: 40px;
+    letter-spacing: 4px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .main .footer .top {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+body .main .footer .top .title {
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 600;
+    font-size: 40px;
+    color: #23262A;
+    line-height: 40px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .footer .concat-way {
+    display: flex;
+    margin-top: 50px;
+}
+
+body .main .footer .concat-way .way {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main .footer .concat-way .way:first-child {
+    margin-left: 0px;
+}
+
+body .main .footer .concat-way .way .way-logo {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+body .main .footer .concat-way .way .code {
+    margin-left: 10px;
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 500;
+    font-size: 16px;
+    color: #23262A;
+    line-height: 19px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .footer .follow {
+    margin-top: 50px;
+}
+
+body .main .footer .follow .title {
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 600;
+    font-size: 20px;
+    color: #23262A;
+    line-height: 20px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+body .main .footer .follow-way {
+    display: flex;
+    margin-top: 50px;
+}
+
+body .main .footer .follow-way .way {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main .footer .follow-way .way:first-child {
+    margin-left: 0px;
+}
+
+body .main .footer .follow-way .way .way-logo {
+    height: 40px;
+    overflow: hidden;
+}
+
+body .main .footer .follow-way .way .way-logo img {
+    height: 100%;
+}
+
+body .main .footer .domain-record {
+    padding-bottom: 50px;
+    display: flex;
+    margin-top: 94px;
+}
+
+body .main .footer .domain-record .way {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main .footer .domain-record .way:first-child {
+    margin-left: 0px;
+}
+
+body .main .footer .domain-record .way .way-logo {
+    height: 24px;
+    overflow: hidden;
+}
+
+body .main .footer .domain-record .way .way-logo img {
+    height: 100%;
+}
+
+body .main .footer .domain-record .way .code {
+    margin-left: 4px;
+    font-family: Clash Display Variable, Clash Display Variable;
+    font-weight: 500;
+    font-size: 12px;
+    color: #23262A;
+    line-height: 12px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
