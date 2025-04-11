@@ -40,7 +40,7 @@ body {
             .content {
                 font-family: Clash Display Variable, Clash Display Variable;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 18px;
                 color: #4C5156;
                 line-height: 40px;
                 letter-spacing: 4px;
@@ -71,7 +71,7 @@ body {
         }
 
         .product-show-mobile {
-            margin-top: 150px;
+            margin-top: 50px;
 
             .top {
                 display: flex;
@@ -93,14 +93,14 @@ body {
 
                 .dots {
                     border: 1px solid #c1c6cb;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     width: 50px;
                 }
             }
 
             .list {
                 padding: 0px 20px;
-                margin-top: 50px;
+                margin-top: 30px;
                 display: flex;
                 flex-wrap: wrap;
 
@@ -149,7 +149,7 @@ body {
                         font-style: normal;
                         text-transform: none;
                         margin-top: 20px;
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
                     }
                 }
 
@@ -164,7 +164,7 @@ body {
         }
 
         .design {
-            margin-top: 140px;
+            margin-top: 50px;
             display: flex;
             flex-direction: column;
 
