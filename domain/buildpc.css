@@ -25,12 +25,12 @@ body .main .desc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
 }
 
 body .main .desc .brand {
     margin-top: 50px;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 600;
     font-size: 30px;
     color: #23262A;
@@ -41,7 +41,7 @@ body .main .desc .brand {
 }
 
 body .main .desc .content {
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #4C5156;
@@ -80,7 +80,7 @@ body .main .product-show-pc .top {
 }
 
 body .main .product-show-pc .top .title {
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 600;
     font-size: 40px;
     color: #23262A;
@@ -171,7 +171,7 @@ body .main .product-show-pc .swipe .swiper-list .list .list-block .product-name 
     display: flex;
     align-items: center;
     justify-self: center;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #23262A;
@@ -225,7 +225,7 @@ body .main .design .text-block .float {
 }
 
 body .main .design .text-block .float .header {
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 600;
     font-size: 30px;
     color: #23262A;
@@ -238,7 +238,7 @@ body .main .design .text-block .float .header {
 
 body .main .design .text-block .float .content {
     margin-top: 20px;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #221100;
@@ -262,7 +262,7 @@ body .main .footer .top {
 }
 
 body .main .footer .top .title {
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 600;
     font-size: 40px;
     color: #23262A;
@@ -296,7 +296,7 @@ body .main .footer .concat-way .way .way-logo {
 
 body .main .footer .concat-way .way .code {
     margin-left: 10px;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #23262A;
@@ -311,7 +311,7 @@ body .main .footer .follow {
 }
 
 body .main .footer .follow .title {
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #23262A;
@@ -374,7 +374,7 @@ body .main .footer .domain-record .way .way-logo img {
 
 body .main .footer .domain-record .way .code {
     margin-left: 4px;
-    font-family: Clash Display Variable, Clash Display Variable;
+    font-family: PingFangTC-Regular, sans-serif;
     font-weight: 500;
     font-size: 12px;
     color: #23262A;

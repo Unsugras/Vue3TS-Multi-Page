@@ -23,11 +23,11 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-family: Clash Display Variable, Clash Display Variable;
+            font-family: PingFangTC-Regular, sans-serif;
 
             .brand {
                 margin-top: 50px;
-                font-family: Clash Display Variable, Clash Display Variable;
+                font-family: PingFangTC-Regular, sans-serif;
                 font-weight: 600;
                 font-size: 30px;
                 color: #23262A;
@@ -38,7 +38,7 @@ body {
             }
 
             .content {
-                font-family: Clash Display Variable, Clash Display Variable;
+                font-family: PingFangTC-Regular, sans-serif;
                 font-weight: 400;
                 font-size: 18px;
                 color: #4C5156;
@@ -80,7 +80,7 @@ body {
                 justify-content: center;
 
                 .title {
-                    font-family: Clash Display Variable, Clash Display Variable;
+                    font-family: PingFangTC-Regular, sans-serif;
                     font-weight: 600;
                     font-size: 40px;
                     color: #23262A;
@@ -140,7 +140,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-self: center;
-                        font-family: Clash Display Variable, Clash Display Variable;
+                        font-family: PingFangTC-Regular, sans-serif;
                         font-weight: 500;
                         font-size: 20px;
                         color: #23262A;
@@ -186,7 +186,7 @@ body {
                     padding: 30px 37px 20px 37px;
 
                     .header {
-                        font-family: Clash Display Variable, Clash Display Variable;
+                        font-family: PingFangTC-Regular, sans-serif;
                         font-weight: 600;
                         font-size: 30px;
                         color: #23262A;
@@ -199,7 +199,7 @@ body {
 
                     .content {
                         margin-top: 20px;
-                        font-family: Clash Display Variable, Clash Display Variable;
+                        font-family: PingFangTC-Regular, sans-serif;
                         font-weight: 400;
                         font-size: 20px;
                         color: #221100;
@@ -224,7 +224,7 @@ body {
                 align-items: center;
 
                 .title {
-                    font-family: Clash Display Variable, Clash Display Variable;
+                    font-family: PingFangTC-Regular, sans-serif;
                     font-weight: 600;
                     font-size: 40px;
                     color: #23262A;
@@ -259,7 +259,7 @@ body {
 
                     .code {
                         margin-left: 10px;
-                        font-family: Clash Display Variable, Clash Display Variable;
+                        font-family: PingFangTC-Regular, sans-serif;
                         font-weight: 500;
                         font-size: 16px;
                         color: #23262A;
@@ -275,7 +275,7 @@ body {
                 margin-top: 50px;
 
                 .title {
-                    font-family: Clash Display Variable, Clash Display Variable;
+                    font-family: PingFangTC-Regular, sans-serif;
                     font-weight: 600;
                     font-size: 20px;
                     color: #23262A;
@@ -340,7 +340,7 @@ body {
 
                     .code {
                         margin-left: 4px;
-                        font-family: Clash Display Variable, Clash Display Variable;
+                        font-family: PingFangTC-Regular, sans-serif;
                         font-weight: 500;
                         font-size: 12px;
                         color: #23262A;
