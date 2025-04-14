@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    -webkit-tap-highlight-color:transparent
+    -webkit-tap-highlight-color: transparent
 }
 
 body {
@@ -69,6 +69,7 @@ body {
 
         .product-show-pc {
             margin-top: 150px;
+
             .top {
                 display: flex;
                 flex-direction: column;
@@ -186,7 +187,8 @@ body {
                 }
             }
         }
-        .product-show-mobile{
+
+        .product-show-mobile {
             display: none;
         }
 
